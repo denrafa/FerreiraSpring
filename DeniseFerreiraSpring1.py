@@ -3,9 +3,9 @@ import json
 import math
 
 
-response =requests.get("https://jobs.github.com/positions?description=python&location=new+york")
+response =requests.get("https://jobs.github.com/positions.json")
 print(response.status_code)
-200
+
 print(response.json())
 
 
@@ -38,24 +38,24 @@ parameters = {
 
 
 
-def data_items(description,location,lat,long,full_time):
-    description = "python"
-    location = " New York"
-    full_time = True
+# def data_items(description,location,lat,long,full_time):
+#     description = "python"
+#     location = " New York"
+#     full_time = True
 
 
 
 
 
-    print(description + " " + location + " " + lat + " " + long + " " + full_time)
+#    print(description + " " + location + " " + lat + " " + long + " " + full_time)
 
 
 
-data_items("description", "location", " lat", "long" , " full_time")
+#data_items("description", "location", " lat", "long" , " full_time")
 
 def job_title(data_analytics,software_architect,software_eng,technology):
     print(" ")
 
 
-data_items("description", "location", "lat", "long","full_time")
+#data_items("description", "location", "lat", "long","full_time")
 
